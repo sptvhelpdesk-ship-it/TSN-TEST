@@ -1,0 +1,20 @@
+Please refine and update the TSN 365 application with the following detailed layout, routing, and functional adjustments:
+Homepage "Live Now" & See-All Live Page:
+Remove the promo/analytics ad box ("Full Sport Analytics / Get Predictions") from the homepage's Live Now section. On the homepage, only show the live match cards.
+Place this promo/analytics ad box ("Full Sport Analytics / Get Predictions") at the bottom of the "See All" Live Matches page (/sports/live), right beneath the live match cards. Ensure it redirects the user to the Predictions page (/sports/prediction) upon clicking.
+"See All" Upcoming Page:
+Keep the homepage's Upcoming section exactly as it is (it is perfect).
+Add the same promo/analytics ad box ("Full Sport Analytics / Get Predictions") at the bottom of the "See All" Upcoming Matches page (/sports/upcoming), which also redirects users to the Predictions page (/sports/prediction) when clicked.
+Competitions Banner Height:
+Adjust the styling of the Competitions Banner Slider. Make sure the height is optimized so the banners render at full scale (full-bleed/full height) nicely without being cut off or appearing too small on mobile and desktop screens.
+Homepage "Predictions" & See-All Predictions Page:
+Remove the promo ad box ("Watch Live Action / Go to Live") from the homepage's Match Predictions section.
+Place this "Watch Live Action / Go to Live" promo box at the bottom of the "See All" Predictions page (/sports/prediction), right underneath the prediction cards. Ensure it redirects the user to the Live page (/sports/live) upon clicking.
+Highlights Page:
+Ensure the Highlights page displays "Coming Soon" with a beautiful, modern, and engaging loading/bouncing animation.
+Add the "Watch Live Action / Go to Live" promo box at the bottom of the Highlights page, which redirects users to the Live page (/sports/live).
+Sports Channel Integration (Using the provided HTML logic):
+Update the Sports Channel view (/sports/channel) and Sports Player view to match the exact iframe streaming, server/link modal selector, and grid logic from the provided sports channel.html file.
+Ensure that when a user taps a channel, it correctly opens the dynamic link/server selector modal (or plays the channel iframe cleanly) exactly like the HTML template.
+Do NOT remove the Category Slider currently present on the Sports Channel view in the React app; keep this category slider fully functional.
+Ensure both views load their data from the single primary API URL: https://tight-river-c898.ranatoufik66.workers.dev/?url=https://all-rounder-two.vercel.app/tsn. Do not use any secondary APIs.

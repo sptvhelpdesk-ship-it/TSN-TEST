@@ -1,0 +1,14 @@
+Please apply the final aesthetic touch-ups and performance optimizations to the TSN 365 application:
+Real Footer Social Media Icons:
+In Footer.tsx, dynamically render the real brand icons for each configured social media link (Facebook, Instagram, LinkedIn, Telegram, Twitter, YouTube) using the official Lucide icons (Facebook, Instagram, Linkedin, Send for Telegram, Twitter, Youtube).
+Apply their respective official brand colors (e.g., #1877F2 for Facebook, #E1306C for Instagram, etc.) to make the icons look premium and professional.
+Top Badges Alignment on Prediction Details Page:
+In the header of the PredictionDetails page, realign the category badge (e.g., "FOOTBALL") and the "ACTIVE PREDICTION" status badge.
+Position the category badge on the far left, and place the "ACTIVE PREDICTION" badge on the exact same line, aligned to the far right using a responsive flex-row container (flex justify-between items-center w-full) to look clean and premium.
+Double Outcome Boxes on Golden Panel:
+Re-structure the prediction outcome panel at the bottom of the PredictionDetails page to display two separate boxes next to each other inside a responsive grid (grid grid-cols-1 md:grid-cols-2 gap-4).
+Box 1 (Match Outcome): Keep the existing logic (displays "Match Winner" with the winning team's flag/logo, or "Match Result" with the draw status).
+Box 2 (Score Prediction): Add a second, separate styled outcome box with the title "Score Prediction" and render the scorePredictionText string from the API JSON (e.g. "Brazil 3-0 Haiti" or "Los Angeles Knight Riders won by 5 wickets") in an ultra-bold, high-contrast, premium typography layout.
+Mobile Touch & Interaction Optimization:
+Optimize the touch interaction across the entire app for a smooth, native app-like experience.
+Apply CSS touch-action: manipulation and -webkit-tap-highlight-color: transparent to all interactive elements (buttons, links, navigation, and swiper slides) to eliminate click delays and ensure instant, fluid tactile responses on mobile touchscreens

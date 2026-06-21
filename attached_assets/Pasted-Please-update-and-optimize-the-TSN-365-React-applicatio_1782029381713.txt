@@ -1,0 +1,23 @@
+Please update and optimize the TSN 365 React application code base to resolve specific UI, rendering, and logic requirements on the Home and Prediction Details pages:
+Optimize Competition Banner Slider:
+Modify the CompetitionBannerSlider component styling. Change any fixed aspect-ratio, cropped padding, or object-cover parameters to ensure that the banner images dynamically scale to their full, natural dimensions and height without any cropping, so that the entire frame of each banner is fully visible on both mobile and desktop screens.
+Revamp Prediction Details Page (PredictionDetails or routed prediction component):
+Please implement the following specific UI structures and logics:
+a) Match Analysis Section:
+Display the complete description string from the API inside a cleanly styled analysis container.
+Add a subtle, professional pulse or animated icon right next to the "MATCH ANALYSIS" section header.
+b) Key Predictions & Tips (Bold Pointers):
+Change the title from "Key Notes & Tips" to "Bold Prediction".
+Add a micro-animation next to the "Bold Prediction" title.
+Render each item in the bulletPoints array inside a bold, clean typography list with styled custom bullet icons.
+c) Head to Head Comparison Table:
+Correct any spelling mistakes. Center-align the section header and write it in bold uppercase letters: "HEAD TO HEAD COMPARISON".
+Below the main header, display sub-headers with the Team A name on the left and the Team B name on the right.
+In each metric row, display the category label (e.g., Striker, Midfield) in the middle.
+Render the dynamic comparison circles (rating stars/status dots) representing t1 and t2 values on their respective sides, applying dynamic colors based on their status: Green for "GOOD" (Strong), Amber for "AVERAGE", and Red for "WEAK".
+d) Match Outcome Golden Panel:
+Implement a smart conditional logic for the first prediction outcome box: If the predicted outcome contains a team name, set the box title to "Match Winner". If the predicted outcome is a "Draw" (or any non-team result), set the box title to "Match Result".
+If a specific team is predicted to win, dynamically fetch and display that team's logo/flag icon next to the team's name inside the box.
+The second prediction box should display the score result or possible score predictions clearly.
+Unified API Pipeline Verification:
+Ensure all components (Live Now, Upcoming, Predictions, Channels, and Site Settings) fetch data seamlessly from the single primary API: https://tight-river-c898.ranatoufik66.workers.dev/?url=https://all-rounder-two.vercel.app/tsn with zero CORS, rendering, or empty state fallback bugs.
